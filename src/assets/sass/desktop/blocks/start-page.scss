@@ -1,0 +1,550 @@
+.play-demo {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../../../img/start-page/play-demo.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 10px;
+
+  .validity__link-text {
+    font-weight: 700;
+  }
+}
+
+.play-demo__left {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.play-demo__powered-img {
+  width: 102px;
+  height: auto;
+}
+
+.play-demo__right {
+  .main__head-right {
+    background-color: transparent;
+    height: 30px;
+    width: 280px;
+  }
+
+  .leaders__icons {
+    justify-content: center;
+  }
+
+  .leaders__item {
+    background-color: rgba(var(--rocket-green1), 0.1);
+    margin-bottom: 6px;
+  }
+
+  .leaders__icons--width {
+    padding: 0;
+    width: 10%;
+  }
+
+  .leaders__gamers--width {
+    width: 29%;
+  }
+
+  .leaders__bet--width {
+    width: 21%;
+    padding-right: 5px;
+  }
+
+  .leaders__win--width {
+    width: 23%;
+  }
+}
+
+.play-demo__leaders {
+  margin: 35px 10px 0 8px;
+}
+
+.play-demo__leaders-top {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(var(--rocket-green1), 1);
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.play-demo__leaders-text {
+  padding: 0 0 3px 5px;
+}
+
+.play-demo__leaders-svg {
+  width: 38px;
+  height: 31px;
+  fill: rgba(var(--rocket-green1), 1);
+}
+
+.play-demo__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.play-demo__logo {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.play-demo__logo-img {
+  width: 420px;
+}
+
+.play-demo__rocket-field {
+  margin-top: 20px;
+  width: 100px;
+  height: 285px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.play-demo__rocket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../../img/rocket-animation.png");
+  background-size: 1100px auto;
+  z-index: 10;
+}
+
+.play-demo__button {
+  width: 280px;
+  height: 280px;
+  background-image: url("../../../img/start-page/bet-circle.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 140px;
+  z-index: 1;
+
+  .console__bet {
+    z-index: 1;
+  }
+
+  .console__bet {
+    .console__bet-button-text {
+      display: inline-block;
+    }
+  }
+
+  .console__bet-button-layer {
+    top: -18px;
+    right: -18px;
+    bottom: -18px;
+    left: -18px;
+  }
+
+  .console__bet-button {
+    width: 165px;
+    height: 165px;
+    background-size: 165px 165px;
+    text-decoration: none;
+  }
+}
+
+
+.main-buttons {
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.how-top-play {
+  font-size: 23px;
+  color: rgba(var(--rocket-yellow1), 1);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+
+
+.demo {
+  font-size: 28px;
+  color: rgba(var(--rocket-green1), 1);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    filter: brightness(1.4);
+  }
+}
+
+.play-demo-bottom {
+  width: 400px;
+  height: 170px;
+  position: relative;
+  z-index: 0;
+  margin-top: -10px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 170px;
+    display: block;
+    top: 0;
+    left: -185px;
+    width: 770px;
+    background-image: url("../../../img/earth.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: -4;
+  }
+
+  &::before {
+    position: absolute;
+    top: -126px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 850px;
+    height: 300px;
+    content: "";
+    display: block;
+    background-image: url("../../../img/earth-shadow.png");
+    background-size: 850px 500px;
+    z-index: -5;
+    background-position: top;
+  }
+}
+
+
+//dasdas
+
+.loading-field {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-300%);
+  background-image: url("../../../img/start-page/start-background.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s;
+  z-index: 15;
+}
+
+.loading-field.active {
+  transform: translateY(0);
+}
+
+.loading-top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 110px;
+}
+
+.loading-logo {
+  width: 420px;
+  height: auto;
+}
+
+.loading__time-field {
+  width: 210px;
+  padding: 0 4px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: rgba(var(--rocket-gray2), 0.2);
+  display: flex;
+  align-items: center;
+  margin: 130px auto 0;
+  animation-name: loading;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.loading__time {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgba(var(--rocket-green1), 1);
+  animation-name: loading-time;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loading-time {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+
+.loading-bottom {
+  height: 170px;
+  width: 640px;
+  position: relative;
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 170px;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../../../img/earth.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  &::before {
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 422px;
+    height: 300px;
+    content: "";
+    display: block;
+    background-image: url("../../../img/earth-shadow.png");
+    background-size: 422px 300px;
+    z-index: -5;
+    background-position: top;
+  }
+}
+
+.loading__rocket {
+  width: 144px;
+  height: 417px;
+  position: absolute;
+  top: -319px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../../../img/rocket-animation.png");
+  background-size: auto 4000px;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.loading__rocket-garage {
+  width: 182px;
+  height: 195px;
+  position: absolute;
+  top: -154px;
+  left: 50%;
+  transform: translateX(-51%);
+  background-image: url("../../../img/rocket-garage.svg");
+  background-size: 182px 195px;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.loading-powered {
+  position: absolute;
+  bottom: 10px;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.loading-powered-img {
+  width: 130px;
+  height: auto;
+}
+
+.how-to-play__popup {
+  position: fixed;
+  top: 220px;
+  height: 584px;
+  width: 613px;
+  left: 50%;
+  transform: translate(-50%, 200%);
+  z-index: 10;
+  background-color: rgba(var(--rocket-black6), 1);
+  color: rgba(var(--rocket-gray2), 0.7);
+  border-radius: 10px;
+  overflow-y: hidden;
+  transition: 0.3s;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../../img/stars-z1.png");
+    z-index: -1;
+  }
+}
+
+.how-to-play__popup.active {
+  transform: translate(-50%, 0);
+}
+
+.how-to-play__title {
+  background-color: rgba(var(--rocket-gray2), 0.05);
+  color: rgba(var(--rocket-green1), 1);
+  font-size: 17.5px;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  padding: 6px 0;
+  margin-bottom: 40px;
+}
+
+.how-to-play__close {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.how-to-play__close-svg {
+  width: 15px;
+  height: 15px;
+  fill: rgba(var(--rocket-green1), 1);
+}
+
+.how-to-play__info {
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 0 45px;
+}
+
+@media screen and (max-width: 1440px), screen and (max-height: 899px) {
+  .loading-logo {
+    width: 350px;
+  }
+
+  .loading-top {
+    margin-top: 50px;
+  }
+
+  .loading__time-field {
+    margin-top: 80px;
+  }
+
+  .play-demo__right .main__head-right {
+    width: 260px;
+  }
+
+  .play-demo__left {
+    width: 260px;
+  }
+
+  .play-demo__rocket-field {
+    margin-top: 20px;
+    width: 78px;
+    height: 228px;
+  }
+
+  .play-demo__rocket {
+    background-size: 858px auto;
+  }
+
+  .play-demo__logo-img {
+    width: 320px;
+  }
+
+  .play-demo-bottom {
+    height: 120px;
+
+    &::after {
+      height: 120px;
+    }
+  }
+
+  .play-demo__button {
+    bottom: 100px;
+  }
+
+  .how-to-play__popup {
+    top: 180px;
+    height: 470px;
+    width: 492px;
+  }
+
+  .how-to-play__title {
+    margin-bottom: 30px;
+  }
+
+  .how-to-play__info {
+    font-size: 11px;
+    padding: 0 32px;
+    font-family: "Mina", sans-serif;
+  }
+}
+
+@media screen and (max-width: 1365px), screen and (max-height: 767px) {
+  .loading-logo {
+    width: 310px;
+  }
+
+  .loading-top {
+    margin-top: 50px;
+  }
+
+  .loading__time-field {
+    margin-top: 80px;
+  }
+
+  .how-to-play__popup {
+    top: 170px;
+  }
+}

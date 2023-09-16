@@ -1,0 +1,11 @@
+.desktop {
+  /* global style */
+  @import "global";
+
+  /* blocks */
+  @import "blocks/start-page";
+  @import "blocks/left-menu";
+  @import "blocks/main";
+  @import "blocks/wrapper";
+}
+

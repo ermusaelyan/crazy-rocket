@@ -1,0 +1,13 @@
+.mobile {
+  /* global style */
+  @import "global";
+
+  /* blocks */
+  @import "blocks/start-page";
+  @import "blocks/main";
+  @import "blocks/menu";
+  @import "blocks/wrapper";
+  @import "blocks/animations";
+  @import "blocks/landscape";
+}
+

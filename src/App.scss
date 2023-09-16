@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+html.mobile {
+  font-size: 4vw;
+}
+
+body {
+  //font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  user-select: none;
+  outline: none;
+}
+
+
+@import "assets/sass/global/style.scss";
+@import "assets/sass/desktop/style.scss";
+@import "assets/sass/mobile/style.scss";
